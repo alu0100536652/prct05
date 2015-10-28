@@ -1,5 +1,5 @@
-## Práctica de laboratorio 5
+# Práctica de laboratorio 5
 
-# Programación Orientada a Objetos en Ruby
+## Programación Orientada a Objetos en Ruby
 
 Alumno: David Carlos
