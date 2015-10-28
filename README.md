@@ -1,5 +1,7 @@
 # Práctica de laboratorio 5
 
-## Programación Orientada a Objetos en Ruby
+## Pruebas Unitarias.
 
 Alumno: David Carlos
+
+Implementación de una clase para representar números fraccionarios
