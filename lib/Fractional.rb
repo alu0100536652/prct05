@@ -23,6 +23,13 @@ class Fractional
     Fractional.new((numerator / common) ,(denominator / common))
   end
   
+  def *(other)
+    numerator = @numerator * other.numerator
+    denominator = @denominator * other.denominator
+    common = gcd(numerator,denominator)
+    Fractional.new((numerator / common) ,(denominator / common))
+  end
+  
   def gcd(m, n)
     m, n = n, m % n until n.zero?
     m.abs

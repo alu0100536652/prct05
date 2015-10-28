@@ -10,6 +10,8 @@ class TestFractional < Test::Unit::TestCase
     @fr5 = Fractional.new(5,4)
     @fr6 = (@fr3 - @fr2)
     @fr7 = Fractional.new(1,4)
+    @fr8 = (@fr3 * @fr2)
+    @fr9 = Fractional.new(3,8)
   end
   def test_simple
     assert_equal(0, @fr1.numerator)
@@ -19,5 +21,6 @@ class TestFractional < Test::Unit::TestCase
     assert_equal("1/2", @fr2.to_s)
     assert_equal(@fr5.to_s, @fr4.to_s)
     assert_equal(@fr7.to_s, @fr6.to_s)
+    assert_equal(@fr9.to_s, @fr8.to_s)
   end
 end
