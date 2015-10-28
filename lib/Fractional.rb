@@ -5,4 +5,8 @@ class Fractional
     @numerator, @denominator = numerator, denominator
   end
   
+  def to_s
+    "#{@numerator}/#{@denominator}"
+  end
+  
 end
