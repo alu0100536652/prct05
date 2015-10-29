@@ -1,4 +1,5 @@
 class Fractional
+   
   attr_reader :numerator, :denominator
   
   def initialize(numerator = 0, denominator = 0)
@@ -35,6 +36,14 @@ class Fractional
     denominator = @denominator * other.numerator
     common = gcd(numerator,denominator)
     Fractional.new((numerator / common) ,(denominator / common))
+  end
+  
+  def ==(other)
+    if((@numerator / @denominator) == (other.numerator / other.denominator))
+      true
+    else
+      false
+    end
   end
   
   def gcd(m, n)

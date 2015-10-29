@@ -2,6 +2,7 @@ require 'lib/Fractional'
 require 'test/unit'
 
 class TestFractional < Test::Unit::TestCase
+  
   def setup
     @fr1 = Fractional.new()
     @fr2 = Fractional.new(1,2)
@@ -14,7 +15,9 @@ class TestFractional < Test::Unit::TestCase
     @fr9 = Fractional.new(3,8)
     @fr10 = (@fr2 / @fr3)
     @fr11 = Fractional.new(2,3)
+    @fr12 = (Fractional.new(20,16) == Fractional.new(5,4))
   end
+  
   def test_simple
     assert_equal(0, @fr1.numerator)
     assert_equal(0, @fr1.denominator)
@@ -25,5 +28,7 @@ class TestFractional < Test::Unit::TestCase
     assert_equal(@fr7.to_s, @fr6.to_s)
     assert_equal(@fr9.to_s, @fr8.to_s)
     assert_equal(@fr11.to_s, @fr10.to_s)
+    assert_equal(true, @fr12)
   end
+  
 end
